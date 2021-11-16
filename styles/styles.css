@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: Helvetica, sans-serif;
 }
 
 .header {
@@ -8,6 +9,7 @@ body {
     justify-content: space-between;
     height: 50px;
     background-color: #1f2937;
+    padding: 30px 50px;
 }
 
 .header, .quote {
@@ -27,10 +29,12 @@ body {
     /* border: 5px solid red; */
     color: #e5e7eb;
     font-size: 18px;
+    font-weight: 100;
 }
 
 li {
     list-style: none;
+    font-size: 18px;
 }
 
 a {
@@ -38,26 +42,86 @@ a {
     color: #e5e7eb;
 }
 
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color:#f9faf8;
+}
 
+h2 {
+    font-size: 18px;
+    color: white;
+    font-weight: 200;;
+}
+
+h3 {
+    font-weight: 100;
+    color: #1f2937;
+    font-style: italic;
+}
+
+.awesome {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    background-color: #1f2937;
+}
+.placeholder {
+    display: flex;
+    width: 400px;
+    border: 1px solid gray;
+    margin-right: 150px;
+    color:white;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.info_title {
+    font-size: 24px;
+    font-weight: 900;
+    margin: 30px;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.box_border {
+    border:3px solid #3882f6;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+.box_text {
+    display: flex;
+    border: 3px solid salmon;
+    gap: 40px;
+}
 
 .quote  {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    width: 800px;
     padding: 50px;
     flex:1;
-    background-color: #e5e7eb;
-    font-weight: 100;
-    color: #1f2937;
-    font-style: italic;
+    background-color: #e5e7eb;  
 }
 .thor {
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 .footer {
@@ -68,11 +132,16 @@ a {
 
 button {
     background-color: #3882f6;
-    border-radius: 10%;
+    border-radius: 5%;
     border: 1px solid white;
     color:white;
+    font-size: 15px;
+    padding: 5px 15px;
 }
 
+.footer {
+    display: flex;
+}
 .copyright {
     display: flex;
     justify-content: center;

@@ -3,10 +3,40 @@ body {
     flex-direction: column;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #1f2937;
+}
 
+.header, .quote {
+    font-size: 36px;
+}
 
+.logo {
+    font-size: 24px;
+    color:#f9faf8;
+}
 
+.header-links {
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    gap:12px;
+    /* border: 5px solid red; */
+    color: #e5e7eb;
+    font-size: 18px;
+}
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #e5e7eb;
+}
 
 
 
@@ -19,7 +49,6 @@ body {
     padding: 50px;
     flex:1;
     background-color: #e5e7eb;
-    font-size: 36px;
     font-weight: 100;
     color: #1f2937;
     font-style: italic;
